@@ -1,6 +1,7 @@
 package com.mouse.mousesmagics.registries;
 
 import com.mouse.mousesmagics.MousesMagics;
+import io.redspace.ironsspellbooks.api.attribute.MagicPercentAttribute;
 import io.redspace.ironsspellbooks.api.attribute.MagicRangedAttribute;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -42,14 +43,14 @@ public class MMAttributeRegistries {
     private static DeferredHolder<Attribute, Attribute> registerResistanceAttribute(String id)
     {
         return ATTRIBUTES.register(id + "_magic_resist", () ->
-                (new MagicRangedAttribute("attribute.mousesmagics." + id + "_magic_resist",
+                (new MagicPercentAttribute("attribute.mousesmagics." + id + "_magic_resist",
                         1.0D, 0, 10).setSyncable(true)));
     }
 
     private static DeferredHolder<Attribute, Attribute> registerPowerAttribute(String id)
     {
         return ATTRIBUTES.register(id + "_spell_power", () ->
-                (new MagicRangedAttribute("attribute.mousesmagics." + id + "_spell_power",
+                (new MagicPercentAttribute("attribute.mousesmagics." + id + "_spell_power",
                         1.0D, 0, 10).setSyncable(true)));
     }
 }

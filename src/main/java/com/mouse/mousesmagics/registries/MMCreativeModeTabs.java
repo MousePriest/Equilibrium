@@ -1,7 +1,6 @@
 package com.mouse.mousesmagics.registries;
 
 import com.mouse.mousesmagics.MousesMagics;
-import com.mouse.mousesmagics.block.MMBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

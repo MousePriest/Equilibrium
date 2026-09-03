@@ -1,0 +1,33 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.overgrown_sickle_block",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6.25, 13, 6.75], "size": [11.5, 11.75, 0], "pivot": [0, 8.5, 6.75], "rotation": [90, -45, 90], "uv": [0, 19]},
+						{"origin": [-6.27448, 13, 6.72352], "size": [11.5, 11.75, 0], "pivot": [0, 8.5, 6.75], "rotation": [77.7873, -43.65747, 107.40744], "uv": [22, 19]},
+						{"origin": [-6.32859, 13, 6.5324], "size": [11.5, 11.75, 0], "pivot": [0, 8.5, 6.75], "rotation": [102.2127, -43.65747, 72.59256], "uv": [26, 0]},
+						{"origin": [-0.75, 4, 5.75], "size": [1.5, 1, 2], "pivot": [0, 8.5, 6.75], "rotation": [135, 0, 0], "uv": [30, 11]},
+						{"origin": [0, -1.5, 4.75], "size": [0, 6, 4], "pivot": [0, 8.5, 6.75], "rotation": [135, 0, 0], "uv": [0, 30]},
+						{"origin": [-0.23097, -1.5, 4.84567], "size": [0, 6, 4], "pivot": [0, 8.5, 6.75], "rotation": [132.73421, 15.69986, -16.32495], "uv": [8, 30]},
+						{"origin": [0.23097, -1.5, 4.84567], "size": [0, 6, 4], "pivot": [0, 8.5, 6.75], "rotation": [132.73421, -15.69986, 16.32495], "uv": [16, 30]},
+						{"origin": [-0.75, 12, 5.5], "size": [1.5, 1, 2.5], "pivot": [0, 8.5, 6.75], "rotation": [135, 0, 0], "uv": [30, 14]},
+						{"origin": [-0.5, 5, 6], "size": [1, 7, 1.5], "pivot": [0, 8.5, 6.75], "rotation": [135, 0, 0], "uv": [26, 11]},
+						{"origin": [0, 9, 6], "size": [0, 6, 13.5], "pivot": [0, 8.5, 6.75], "rotation": [135, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

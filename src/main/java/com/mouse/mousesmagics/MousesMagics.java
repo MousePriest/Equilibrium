@@ -1,6 +1,6 @@
 package com.mouse.mousesmagics;
 
-import com.mouse.mousesmagics.block.MMBlocks;
+import com.mouse.mousesmagics.registries.MMBlocks;
 import com.mouse.mousesmagics.item.staffs.ceremonial_dagger.Ceremonial_DaggerRenderer;
 import com.mouse.mousesmagics.item.staffs.crystal_wrench.Crystal_WrenchRenderer;
 import com.mouse.mousesmagics.item.staffs.overgrown_sickle.OvergrownSickleRenderer;
@@ -49,6 +49,8 @@ public class MousesMagics {
         MMParticleRegistries.register(modEventBus);
 
         MMBlocks.register(modEventBus);
+
+        MMBlockEntityRegistries.register(modEventBus);
 
         SpellRegistries.register(modEventBus);
     }

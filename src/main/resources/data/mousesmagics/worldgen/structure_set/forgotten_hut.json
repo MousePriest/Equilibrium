@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mousesmagics:forgotten_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 864277540,
+    "spacing": 100,
+    "separation": 44,
+    "type": "minecraft:random_spread"
+  }
+}

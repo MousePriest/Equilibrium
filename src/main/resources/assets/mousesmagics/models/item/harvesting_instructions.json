@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mousesmagics:item/harvesting_instructions"
+  }
+}

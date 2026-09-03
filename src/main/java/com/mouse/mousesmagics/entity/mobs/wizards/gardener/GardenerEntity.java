@@ -1,6 +1,7 @@
 package com.mouse.mousesmagics.entity.mobs.wizards.gardener;
 
 import com.google.common.collect.Sets;
+import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.registries.MMItems;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
 import io.redspace.ironsspellbooks.IronsSpellbooks;
@@ -19,6 +20,7 @@ import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
@@ -194,11 +196,11 @@ public class GardenerEntity extends NeutralWizard implements IMerchantWizard {
             if (this.random.nextFloat() < .8f) {
                 this.offers.add(new AdditionalWanderingTrades.RandomScrollTrade(new SpellFilter(MMSchoolRegistries.DEW.get()), .8f, 1f).getOffer(this, this.random));
             }
-            this.offers.add(new AdditionalWanderingTrades.SimpleSell(3, new ItemStack(MMItems.GARDENING_GUIDE.get()), 64, 128).getOffer(this, this.random));
+            this.offers.add(new AdditionalWanderingTrades.SimpleSell(3, new ItemStack(MMItems.PLANTING_INSTRUCTIONS.get()), 64, 64).getOffer(this, this.random));
             this.offers.add(new MerchantOffer(
-                    new ItemCost(Items.EMERALD, 24),
+                    new ItemCost(Items.EMERALD, 32),
                     Optional.empty(),
-                    FurledMapItem.of(IronsSpellbooks.id("mangrove_hut"), Component.translatable("item.irons_spellbooks.alchemical_trade_route")),
+                    FurledMapItem.of(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID,"forgotten_hut"), Component.translatable("item.mousesmagics.abandoned_home")),
                     0,
                     1,
                     5,

@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 7,
+      "rolls": 8,
       "entries": [
         {
           "type": "minecraft:item",
@@ -44,8 +44,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "mousesmagics:focus"
+          "weight": 2,
+          "name": "mousesmagics:fragile_drops"
         }
       ]
     },
@@ -80,8 +80,8 @@
           "functions": [
             {
               "function": "irons_spellbooks:set_furled_map",
-              "destination": "irons_spellbooks:pyromancer_tower",
-              "description_translation": "item.mousesmagics.pyro_map"
+              "destination": "minecraft:trail_ruins",
+              "description_translation": "item.mousesmagics.trail_ruin_map"
             }
           ]
         }
@@ -89,7 +89,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.1
+          "chance": 0.3
         }
       ]
     },

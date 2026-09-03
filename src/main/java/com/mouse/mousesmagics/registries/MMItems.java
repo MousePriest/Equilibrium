@@ -1,7 +1,6 @@
 package com.mouse.mousesmagics.registries;
 
 import com.mouse.mousesmagics.MousesMagics;
-import com.mouse.mousesmagics.block.MMBlocks;
 import com.mouse.mousesmagics.item.armour.blossom_bandit.BlossomBanditArmourItem;
 import com.mouse.mousesmagics.item.spellbooks.GardeningGuide;
 import com.mouse.mousesmagics.item.staffs.MMStaffTiers;
@@ -31,15 +30,23 @@ public class MMItems {
     //Dew focus
     public static final DeferredItem<Item> FRAGILE_DROPS = ITEMS.register("fragile_drops",
             () -> new Item(new Item.Properties()));
-
     public static final DeferredItem<Item> SERENE_SEED = ITEMS.register("serene_seed",
             () -> new ItemNameBlockItem(MMBlocks.DEW_CATCHER.get(), new Item.Properties()));
+
     //Dew staffs
     public static final DeferredHolder<Item, Item> OVERGROWN_SICKLE = ITEMS.registerItem("overgrownsickle", props ->
             new StaffItem(props.stacksTo(1).attributes(ExtendedSwordItem.createAttributes(MMStaffTiers.OVERGROWN_SICKLE))));
+
     //Dew books
     public static final DeferredHolder<Item, Item> GARDENING_GUIDE = ITEMS.register
             ("gardening_guide", GardeningGuide::new);
+    public static final DeferredItem<Item> WATERING_INSTRUCTIONS = ITEMS.register("watering_instructions",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLANTING_INSTRUCTIONS = ITEMS.register("planting_instructions",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HARVESTING_INSTRUCTIONS = ITEMS.register("harvesting_instructions",
+            () -> new Item(new Item.Properties()));
+
     //Dew Armour
     public static final DeferredHolder<Item, Item> BLOSSOM_BANDIT_HELMET = ITEMS.registerItem("blossom_bandit_helmet",
             props -> new BlossomBanditArmourItem(ArmorItem.Type.HELMET, props.stacksTo(1).durability(ArmorItem.Type.HELMET.getDurability(37))));
@@ -55,6 +62,7 @@ public class MMItems {
     //Hex focus
     public static final DeferredItem<Item> BOTTLE_OF_CURSES = ITEMS.register("bottle_of_curses",
             () -> new Item(new Item.Properties()));
+
     //Hex staffs
     public static final DeferredHolder<Item, Item> CEREMONIAL_DAGGER = ITEMS.register("ceremonial_dagger", () ->
             new StaffItem(ItemPropertiesHelper.equipment(1).attributes(ExtendedSwordItem.createAttributes(MMStaffTiers.CEREMONIAL_DAGGER))));
@@ -83,13 +91,17 @@ public class MMItems {
 
     /* F______ H________
 
-    -E______ B___
+    -Ecliptic Greaves
 
     -M___ O_ M_____
 
     -F_______ C______ V___
 
      */
+
+    //*MISC*
+
+    //Plant-Be-Gone
 
     private static <T extends Item> DeferredHolder<Item, T> registerItem(String name, Function<Item.Properties, T> itemFactory) {
         return ITEMS.register(name, () -> itemFactory.apply(new Item.Properties()));

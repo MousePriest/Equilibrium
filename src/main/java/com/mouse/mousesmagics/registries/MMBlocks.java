@@ -1,8 +1,7 @@
-package com.mouse.mousesmagics.block;
+package com.mouse.mousesmagics.registries;
 
 import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.block.plants.DewCatcherPlantBlock;
-import com.mouse.mousesmagics.registries.MMItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -22,6 +21,9 @@ public class MMBlocks {
     public static final DeferredBlock<Block> BLOSSOM_CHALK = registerBlock("blossom_chalk",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DRIPSTONE_BLOCK)));
+
+    //public static final DeferredBlock<Block> OVERGROWN_SICKLE_BLOCK = BLOCKS.register("overgrown_sickle_block",
+    //        () -> new Block(BlockBehaviour.Properties.of()));
 
     public static final DeferredBlock<Block> DEW_CATCHER = registerBlock("dew_catcher",
             () -> new DewCatcherPlantBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));

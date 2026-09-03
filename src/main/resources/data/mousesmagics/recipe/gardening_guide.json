@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "A": {
+      "item": "mousesmagics:planting_instructions"
+    },
+    "B": {
+      "item": "mousesmagics:watering_instructions"
+    },
+    "C": {
+      "item": "mousesmagics:harvesting_instructions"
+    },
+    "D": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "E": {
+      "item": "mousesmagics:serene_seed"
+    }
+  },
+  "pattern": [
+    "DED",
+    "ABC",
+    "DED"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mousesmagics:gardening_guide"
+  }
+}

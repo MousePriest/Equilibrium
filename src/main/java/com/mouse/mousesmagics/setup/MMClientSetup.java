@@ -57,6 +57,8 @@ public class MMClientSetup {
         event.registerEntityRenderer(MMEntityRegistries.FLORAL_SPEAR_PROJECTILE.get(), FloralSpearRenderer::new);
         event.registerEntityRenderer(MMEntityRegistries.DRAGON_BURST_PROJECTILE.get(), DragonBurstRenderer::new);
         event.registerEntityRenderer(MMEntityRegistries.DRAGON_FIELD.get(), NoopRenderer::new);
+
+    //    event.registerBlockEntityRenderer(MMBlockEntityRegistries.OVERGROWN_SICKLE_BLOCK.get(), OvergrownSickleBlockRenderer::new);
     }
 
     @SubscribeEvent
