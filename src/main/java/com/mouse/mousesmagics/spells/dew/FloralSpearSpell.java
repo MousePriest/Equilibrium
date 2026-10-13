@@ -33,7 +33,7 @@ public class FloralSpearSpell extends AbstractSpell {
             .setMinRarity(SpellRarity.COMMON)
             .setSchoolResource(MMSchoolRegistries.DEW_RESOURCE)
             .setMaxLevel(10)
-            .setCooldownSeconds(8)
+            .setCooldownSeconds(20)
             .build();
 
     public FloralSpearSpell() {
@@ -60,14 +60,10 @@ public class FloralSpearSpell extends AbstractSpell {
     }
 
     @Override
-    public Optional<SoundEvent> getCastStartSound() {
-        return Optional.of(SoundRegistry.LIGHTNING_LANCE_CAST.get());
-    }
+    public Optional<SoundEvent> getCastStartSound() {return Optional.of(SoundRegistry.LIGHTNING_LANCE_CAST.get());}
 
     @Override
-    public Optional<SoundEvent> getCastFinishSound() {
-        return Optional.of(SoundRegistry.LIGHTNING_WOOSH_01.get());
-    }
+    public Optional<SoundEvent> getCastFinishSound() {return Optional.of(SoundRegistry.LIGHTNING_WOOSH_01.get());}
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {

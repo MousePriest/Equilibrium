@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.spells.fire;
+/*package com.mouse.mousesmagics.spells.fire;
 
 import com.mouse.mousesmagics.MousesMagics;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
@@ -79,5 +79,5 @@ public class PhoenixRebirthSpell extends AbstractSpell {
     public AnimationHolder getCastStartAnimation() {
         return SpellAnimations.TOUCH_GROUND_ANIMATION;
     }
-}
+}*/
 

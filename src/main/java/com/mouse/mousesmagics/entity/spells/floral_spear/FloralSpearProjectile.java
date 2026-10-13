@@ -1,6 +1,7 @@
 package com.mouse.mousesmagics.entity.spells.floral_spear;
 
 import com.mouse.mousesmagics.registries.MMEntityRegistries;
+import com.mouse.mousesmagics.registries.MMSoundRegistries;
 import com.mouse.mousesmagics.registries.SpellRegistries;
 import com.mouse.mousesmagics.utils.MMParticleHelper;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
@@ -8,6 +9,7 @@ import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.entity.spells.magic_missile.MagicMissileProjectile;
+import io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions;
 import io.redspace.ironsspellbooks.registries.EntityRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.minecraft.core.Holder;
@@ -30,14 +32,16 @@ import java.util.Optional;
 public class FloralSpearProjectile extends AbstractMagicProjectile {
 
     @Override
-    public void trailParticles() {}
+    public void trailParticles() {
+        Vec3 vec3 = this.position().subtract(getDeltaMovement());
+        level.addParticle(MMParticleHelper.DEW_DROP, vec3.x, vec3.y, vec3.z, 0, 0, 0);
+    }
 
     @Override
     public void impactParticles(double x, double y, double z) {
-        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 75, .1, .1, .1, 1.8, true);
-        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 75, .1, .1, .1, .4, false);
-        MagicManager.spawnParticles(level(), MMParticleHelper.FLOWER, x, y, z, 75, .1, .1, .1, 2, true);
-        MagicManager.spawnParticles(level(), MMParticleHelper.FLOWER, x, y, z, 75, .1, .1, .1, .5, false);
+        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 45, .1, .1, .1, 1.6, true);
+        MagicManager.spawnParticles(level(), MMParticleHelper.DEW_DROP, x, y, z, 45, .1, .1, .1, .7, false);
+        MagicManager.spawnParticles(level, new BlastwaveParticleOptions(1f, 0.95f, 0.95f, 5f), getX(), getY() + 0.06, getZ(), 1, 0, 0, 0, 0, true);
     }
 
     @Override
@@ -77,19 +81,7 @@ public class FloralSpearProjectile extends AbstractMagicProjectile {
         //irons_spellbooks.LOGGER.debug("Boom");
 
         if (!level().isClientSide) {
-            this.playSound(SoundEvents.TRIDENT_THUNDER.value(), 6, .65f);
-//            irons_spellbooks.LOGGER.debug("{}",pos);
-//            //Beam
-//            for (int i = 0; i < 40; i++) {
-//                Vec3 randomVec = new Vec3(
-//                        Utils.random.nextDouble() * .25 - .125,
-//                        Utils.random.nextDouble() * .25 - .125,
-//                        Utils.random.nextDouble() * .25 - .125
-//                );
-//                //level.addParticle(ParticleHelper.ELECTRICITY, pos.x + randomVec.x, pos.y + randomVec.y + i * .25, pos.z + randomVec.z, randomVec.x * .2, randomVec.y * .2, randomVec.z * .2);
-//                level.addParticle(ParticleHelper.ELECTRICITY, pos.x, pos.y, pos.z, 0,0,0);
-//            }
-        }
+            this.playSound(MMSoundRegistries.DEW_CAST.value(), 6, .65f);}
         super.onHit(pResult);
         this.discardHelper(pResult);
     }

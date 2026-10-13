@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.dragon_burst;
+/*package com.mouse.mousesmagics.entity.spells.dragon_burst;
 
 import com.mouse.mousesmagics.registries.MMEntityRegistries;
 import com.mouse.mousesmagics.registries.SpellRegistries;
@@ -150,4 +150,4 @@ public class DragonBurstProjectile extends AbstractMagicProjectile implements Ge
 
         return PlayState.CONTINUE;
     }
-}
+}*/

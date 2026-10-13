@@ -2,12 +2,12 @@ package com.mouse.mousesmagics.setup;
 
 import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.entity.mobs.wizards.gardener.GardenerRenderer;
-import com.mouse.mousesmagics.entity.spells.defenestration.DefenestrationRenderer;
-import com.mouse.mousesmagics.entity.spells.dragon_burst.DragonBurstRenderer;
+//import com.mouse.mousesmagics.entity.spells.defenestration.DefenestrationRenderer;
+//import com.mouse.mousesmagics.entity.spells.dragon_burst.DragonBurstRenderer;
+import com.mouse.mousesmagics.entity.spells.drip.DropRenderer;
 import com.mouse.mousesmagics.entity.spells.floral_spear.FloralSpearRenderer;
-import com.mouse.mousesmagics.entity.spells.petal.PetalRenderer;
 import com.mouse.mousesmagics.particle.FadingFlowerParticle;
-import com.mouse.mousesmagics.particle.FlowerParticle;
+import com.mouse.mousesmagics.particle.SparkleParticle;
 import com.mouse.mousesmagics.registries.MMEntityRegistries;
 import com.mouse.mousesmagics.registries.MMParticleRegistries;
 import com.mouse.mousesmagics.render.MMChargeSpellLayer;
@@ -23,8 +23,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
-
-import java.util.Map;
 
 @EventBusSubscriber(modid = MousesMagics.MOD_ID, value = Dist.CLIENT)
 public class MMClientSetup {
@@ -52,18 +50,18 @@ public class MMClientSetup {
     @SubscribeEvent
     public static void rendererRegister(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(MMEntityRegistries.GARDENER.get(), GardenerRenderer::new);
-        event.registerEntityRenderer(MMEntityRegistries.DEFENESTRATION_PROJECTILE.get(), DefenestrationRenderer::new);
-        event.registerEntityRenderer(MMEntityRegistries.PETAL_PROJECTILE.get(), PetalRenderer::new);
+        //event.registerEntityRenderer(MMEntityRegistries.DEFENESTRATION_PROJECTILE.get(), DefenestrationRenderer::new);
         event.registerEntityRenderer(MMEntityRegistries.FLORAL_SPEAR_PROJECTILE.get(), FloralSpearRenderer::new);
-        event.registerEntityRenderer(MMEntityRegistries.DRAGON_BURST_PROJECTILE.get(), DragonBurstRenderer::new);
-        event.registerEntityRenderer(MMEntityRegistries.DRAGON_FIELD.get(), NoopRenderer::new);
+        //event.registerEntityRenderer(MMEntityRegistries.DRAGON_BURST_PROJECTILE.get(), DragonBurstRenderer::new);
+        //event.registerEntityRenderer(MMEntityRegistries.DRAGON_FIELD.get(), NoopRenderer::new);
+        event.registerEntityRenderer(MMEntityRegistries.DROP.get(), DropRenderer::new);
 
-    //    event.registerBlockEntityRenderer(MMBlockEntityRegistries.OVERGROWN_SICKLE_BLOCK.get(), OvergrownSickleBlockRenderer::new);
+        //    event.registerBlockEntityRenderer(MMBlockEntityRegistries.OVERGROWN_SICKLE_BLOCK.get(), OvergrownSickleBlockRenderer::new);
     }
 
     @SubscribeEvent
     public static void registerParticles(RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(MMParticleRegistries.FADING_FLOWER_PARTICLE.get(), FadingFlowerParticle.Provider::new);
-        event.registerSpriteSet(MMParticleRegistries.FLOWER_PARTICLE.get(), FlowerParticle.Provider::new);
+        event.registerSpriteSet(MMParticleRegistries.SPARKLE_PARTICLE.get(), SparkleParticle.Provider::new);
     }
 }

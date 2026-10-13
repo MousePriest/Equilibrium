@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:blank_rune"
+    },
+    "B": {
+      "tag": "mousesmagics:dew_focus"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mousesmagics:dew_rune"
+  }
+}

@@ -26,50 +26,6 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
-repositories {
-    flatDir {
-        dir 'libs'
-    }
-
-    maven {
-        name = "Iron's Maven - Release"
-        url = "https://code.redspace.io/releases"
-    }
-
-    maven { url = "https://maven.enginehub.org/repo/" }
-    maven {
-        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
-        content {
-            includeGroup("software.bernie.geckolib")
-        }
-    }
-
-    maven {
-        name = "aces_spell_utilsReleases"
-        url = "http://localhost:8080/releases"
-        allowInsecureProtocol = true
-    }
-
-    maven {
-        name = "aces_spell_utilsSnapshots"
-        url = "http://localhost:8080/snapshots"
-        allowInsecureProtocol = true
-    }
-
-    maven { url = "https://maven.theillusivec4.top" }
-    maven { url = "https://cursemaven.com" }
-    maven { url = "https://maven.blamejared.com" }
-    maven { url = "https://maven.kosmx.dev/" }
-    maven { url = 'https://maven.azuredoom.com/mods'}
-
-    maven {
-        url "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
-        content {
-            includeGroup "com.klikli_dev"
-        }
-    }
-}
-
 base {
     archivesName = mod_id
 }
@@ -157,30 +113,51 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+
+    maven {
+        name = "Iron's Maven - Release"
+        url = "https://code.redspace.io/releases"
+    }
+
+    maven {
+        name = "Iron's Maven - Snapshots"
+        url = "https://code.redspace.io/snapshots"
+    }
+
+    maven { url = "https://maven.enginehub.org/repo/" }
+    maven {
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+
+    maven { url = "https://cursemaven.com" }
+}
+
 dependencies {
+    //~Iron's Spellbooks
+    implementation "io.redspace:irons_spellbooks:1.21.1-3.16.3"
+    implementation "curse.maven:irons-lib-1492763:8364894"
 
-    //These things are evil, I hope to never touch them again.
+    //~Gecko
+    implementation "curse.maven:geckolib-388172:8350073"
 
-    implementation "curse.maven:aces-spell-utils-1299492:7462227"
-
-    implementation "io.redspace:irons_spellbooks:1.21.1-3.16.2"
-
-    implementation "curse.maven:irons_lib-1492763:8364894"
-
-    implementation "software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.4"
-
-    implementation "mod.azure.azurelib:azurelib-neo-1.21.1:3.1.0"
-
+    //~Player Animator
     implementation "curse.maven:playeranimator-658587:6024462"
 
-    compileOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1:api"
-    runtimeOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1"
+    //~Curios
+    implementation "curse.maven:curios-309927:6274154"
 
+    //~Ace's Wonderful Magical Collection Of Amazing Things
+    implementation "curse.maven:aces-spell-utils-1299492:9136190"
+
+    //~Misc
     implementation "com.google.code.gson:gson:2.10.1"
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

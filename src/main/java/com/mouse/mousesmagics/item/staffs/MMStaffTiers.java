@@ -1,6 +1,7 @@
 package com.mouse.mousesmagics.item.staffs;
 
 import com.mouse.mousesmagics.registries.MMAttributeRegistries;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.item.weapons.IronsWeaponTier;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -9,7 +10,10 @@ public class MMStaffTiers implements IronsWeaponTier {
 
     //Dew Staffs
     public static MMStaffTiers OVERGROWN_SICKLE = new MMStaffTiers(3, -3,
-            new AttributeContainer(MMAttributeRegistries.DEW_MAGIC_POWER, 0.15f,AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+            new AttributeContainer(MMAttributeRegistries.DEW_MAGIC_POWER, 0.15f,AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, .20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, .05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
 
     //Hex Staffs
     public static MMStaffTiers CEREMONIAL_DAGGER = new MMStaffTiers(3, -3,

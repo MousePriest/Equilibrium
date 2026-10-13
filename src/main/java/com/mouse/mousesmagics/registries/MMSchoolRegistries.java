@@ -37,11 +37,11 @@ public class MMSchoolRegistries {
                     Component.translatable("school.mousesmagics.dew").withStyle(Style.EMPTY.withColor(0xfdc2e1)),
                     MMAttributeRegistries.DEW_MAGIC_POWER,
                     MMAttributeRegistries.DEW_MAGIC_RESIST,
-                    SoundRegistry.HOLY_CAST,
-                    MMDamageTypes.DEW_MAGIC
+                    MMSoundRegistries.DEW_CAST,
+                    MMDamageTypeRegisteries.DEW_MAGIC
             ));
 
-    //Hex
+    /*Hex
     public static final ResourceLocation HEX_RESOURCE = ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "hex");
 
     public static final Supplier<SchoolType> HEX = registerSchool(new SchoolType
@@ -67,5 +67,5 @@ public class MMSchoolRegistries {
                     MMAttributeRegistries.CRYSTAL_MAGIC_RESIST,
                     SoundRegistry.ICE_IMPACT,
                     MMDamageTypes.CRYSTAL_MAGIC
-            ));
+            ));*/
 }

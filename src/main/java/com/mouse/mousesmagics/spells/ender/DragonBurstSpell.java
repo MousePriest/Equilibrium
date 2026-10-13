@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.spells.ender;
+/*package com.mouse.mousesmagics.spells.ender;
 
 import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.entity.spells.dragon_burst.DragonBurstProjectile;
@@ -102,4 +102,4 @@ public class DragonBurstSpell extends AbstractSpell {
     public int getRadius(int spellLevel, LivingEntity caster) {
         return 3;
     }
-}
+}*/

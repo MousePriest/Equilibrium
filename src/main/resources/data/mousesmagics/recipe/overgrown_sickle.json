@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "A": {
+      "item": "mousesmagics:floral_scent"
+    },
+    "B": {
+      "tag": "irons_spellbooks:arcane_ingot"
+    },
+    "C": {
+      "tag": "mousesmagics:serene_seed"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " BC",
+    " BA",
+    "D  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mousesmagics:overgrownsickle"
+  }
+}

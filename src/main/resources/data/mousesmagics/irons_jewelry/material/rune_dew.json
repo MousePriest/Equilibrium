@@ -1,0 +1,18 @@
+{
+  "descriptionId": "material.mousesmagics.rune_dew",
+  "ingredient": {
+    "item": "mousesmagics:dew_rune"
+  },
+  "materialType": [
+    "spellbooks_rune"
+  ],
+  "paletteLocation": "irons_spellbooks:palettes/rune_ender",
+  "quality": 1.5,
+  "bonusParameters": {
+    "irons_jewelry:attribute": {
+      "attribute": "mousesmagics:dew_spell_power",
+      "amount": 0.025,
+      "operation": "add_multiplied_total"
+    }
+  }
+}

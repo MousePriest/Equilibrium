@@ -4,11 +4,13 @@ import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.effect.CalmEffect;
 import com.mouse.mousesmagics.registries.MMEffectRegisteries;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
+import com.mouse.mousesmagics.spells.MMSpellAnimations;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
+import net.acetheeldritchking.aces_spell_utils.spells.ASSpellAnimations;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -85,6 +87,6 @@ public class BlissSpell extends AbstractSpell {
 
     @Override
     public AnimationHolder getCastStartAnimation() {
-        return SpellAnimations.CAST_KNEELING_PRAYER;
+        return ASSpellAnimations.ANIMATION_SNOWGRAVE_STOP;
     }
 }

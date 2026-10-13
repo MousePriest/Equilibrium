@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.dragon_burst;
+/*package com.mouse.mousesmagics.entity.spells.dragon_burst;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -49,4 +49,4 @@ public class DragonBurstRenderer extends GeoEntityRenderer<DragonBurstProjectile
     public ResourceLocation getTextureLocation(DragonBurstProjectile entity) {
         return TEXTURE;
     }
-}
+}*/

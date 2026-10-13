@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.defenestration;
+/*package com.mouse.mousesmagics.entity.spells.defenestration;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -42,4 +42,4 @@ public class DefenestrationRenderer extends GeoEntityRenderer<DefenestrationProj
     public ResourceLocation getTextureLocation(DefenestrationProjectile entity) {
         return TEXTURE;
     }
-}
+}*/

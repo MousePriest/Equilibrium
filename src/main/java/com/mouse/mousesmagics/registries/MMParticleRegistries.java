@@ -16,7 +16,7 @@ public class MMParticleRegistries {
         PARTICLE_TYPES.register(eventBus);
     }
 
-    /* Copying Iron guide
+    /* Copying Iron's guide
 
     To Create Particle:
     - textures + json
@@ -28,5 +28,5 @@ public class MMParticleRegistries {
      */
 
     public static final Supplier<SimpleParticleType> FADING_FLOWER_PARTICLE = PARTICLE_TYPES.register("fading_flower", () -> new SimpleParticleType(false));
-    public static final Supplier<SimpleParticleType> FLOWER_PARTICLE = PARTICLE_TYPES.register("flower", () -> new SimpleParticleType(false));
+    public static final Supplier<SimpleParticleType> SPARKLE_PARTICLE = PARTICLE_TYPES.register("sparkle", () -> new SimpleParticleType(false));
 }

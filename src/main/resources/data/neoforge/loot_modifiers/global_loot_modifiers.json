@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "mousesmagics:sniffer_additions"
+    "mousesmagics:sniffer_additions",
+    "mousesmagics:village_plains_house_additions"
   ]
 }

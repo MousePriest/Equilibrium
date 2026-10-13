@@ -9,7 +9,7 @@ import net.minecraft.world.item.Item;
 
 public class MMTags {
     //Focuses
-    public static final TagKey<Item> DEW_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "focus").toString()));
-    public static final TagKey<Item> HEX_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "bottle_of_curses").toString()));
-    public static final TagKey<Item> CRYSTAL_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "focus").toString()));
+    public static final TagKey<Item> DEW_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "dew_focus").toString()));
+    public static final TagKey<Item> HEX_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "hex_focus").toString()));
+    public static final TagKey<Item> CRYSTAL_FOCUS = ItemTags.create(ResourceLocation.parse(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "crystal_focus").toString()));
 }

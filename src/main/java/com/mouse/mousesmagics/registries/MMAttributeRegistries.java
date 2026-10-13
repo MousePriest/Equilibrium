@@ -39,7 +39,6 @@ public class MMAttributeRegistries {
                         )));
     }
 
-    // ;_;
     private static DeferredHolder<Attribute, Attribute> registerResistanceAttribute(String id)
     {
         return ATTRIBUTES.register(id + "_magic_resist", () ->

@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.defenestration;
+/*package com.mouse.mousesmagics.entity.spells.defenestration;
 
 import com.mouse.mousesmagics.registries.MMEntityRegistries;
 import com.mouse.mousesmagics.registries.SpellRegistries;
@@ -87,4 +87,4 @@ public class DefenestrationProjectile extends AbstractMagicProjectile implements
 
         return PlayState.CONTINUE;
     }
-}
+}*/

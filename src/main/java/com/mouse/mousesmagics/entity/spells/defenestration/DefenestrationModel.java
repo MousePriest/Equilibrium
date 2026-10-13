@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.defenestration;
+/*package com.mouse.mousesmagics.entity.spells.defenestration;
 
 import com.mouse.mousesmagics.MousesMagics;
 import net.minecraft.resources.ResourceLocation;
@@ -20,4 +20,4 @@ public class DefenestrationModel extends GeoModel<DefenestrationProjectile> {
     public ResourceLocation getAnimationResource(DefenestrationProjectile animatable) {
         return ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "animations/entities/spells/blossoming_cuts_idle.animation.json");
     }
-}
+}*/

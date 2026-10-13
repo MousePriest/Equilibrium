@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.dragon_burst;
+/*package com.mouse.mousesmagics.entity.spells.dragon_burst;
 
 import com.mouse.mousesmagics.MousesMagics;
 import net.minecraft.resources.ResourceLocation;
@@ -20,4 +20,4 @@ public class DragonBurstModel extends GeoModel<DragonBurstProjectile> {
     public ResourceLocation getAnimationResource(DragonBurstProjectile animatable) {
         return ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "animations/entities/spells/blank.animation.json");
     }
-}
+}*/

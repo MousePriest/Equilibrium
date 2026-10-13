@@ -1,4 +1,4 @@
-package com.mouse.mousesmagics.entity.spells.dragon_burst;
+/*package com.mouse.mousesmagics.entity.spells.dragon_burst;
 
 import com.mouse.mousesmagics.registries.MMEntityRegistries;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
@@ -85,4 +85,4 @@ public class DragonField extends AoeEntity {
     public Optional<ParticleOptions> getParticle() {
         return Optional.of(ParticleHelper.ENDER_SPARKS);
     }
-}
+}*/

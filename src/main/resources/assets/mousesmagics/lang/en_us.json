@@ -2,12 +2,19 @@
   "creativetab.mousesmagics.mouses_magics": "Equilibrium",
 
   "item.mousesmagics.fragile_drops": "Fragile Drops",
-  "item.mousesmagics.bottle_of_curses": "Bottle of Curses",
   "item.mousesmagics.ice_lolly": "Eldritch Ice Lolly",
   "item.mousesmagics.overgrownsickle": "Overgrown Sickle",
   "item.mousesmagics.gardening_guide": "Gardening Guide",
-  "item.mousesmagics.ceremonial_dagger": "Ceremonial Dagger",
-  "item.mousesmagics.crystal_wrench": "Crystal Wrench",
+  "item.mousesmagics.serene_seed": "Serene Seed",
+  "item.mousesmagics.blossom_bandit_helmet": "Blossom Bandit Helmet",
+  "item.mousesmagics.blossom_bandit_chestplate": "Blossom Bandit Chestplate",
+  "item.mousesmagics.blossom_bandit_leggings": "Blossom Bandit Leggings",
+  "item.mousesmagics.blossom_bandit_boots": "Blossom Bandit Boots",
+  "item.mousesmagics.watering_instructions": "Watering Instructions",
+  "item.mousesmagics.planting_instructions": "Planting Instructions",
+  "item.mousesmagics.harvesting_instructions": "Harvesting Instructions",
+  "item.mousesmagics.dew_rune": "Dew Rune",
+  "item.mousesmagics.dew_upgrade_orb": "Dew Upgrade Orb",
 
   "block.mousesmagics.blossom_chalk": "Blossom Chalk",
 
@@ -15,5 +22,35 @@
   "attribute.mousesmagics.hex_spell_power": "Hex Spell Power",
   "attribute.mousesmagics.crystal_spell_power": "Crystal Spell Power",
 
-  "school.mousesmagics.dew": "Dew"
+  "school.mousesmagics.dew": "Dew",
+
+  "spell.mousesmagics.dew_drop": "Dew-Drop",
+  "spell.mousesmagics.bliss": "Bliss",
+  "spell.mousesmagics.blessing_of_spirit": "Blessing Of Spirit",
+  "spell.mousesmagics.bulwark_of_blossoms": "Bulwark Of Blossoms",
+  "spell.mousesmagics.drip": "Drip",
+  "spell.mousesmagics.floral_spear": "Floral Spear",
+  "spell.mousesmagics.flower_dance": "Flower Dance",
+  "spell.mousesmagics.petal_on_the_wind": "Petal On The Wind",
+  "spell.mousesmagics.protective_film": "Protective Film",
+
+  "spell.mousesmagics.dew_drop.guide": "Blast out a dew drop. On hit, gain boosted mana regen for a few seconds.",
+  "spell.mousesmagics.bliss.guide": "Grants you Calm. Calm lowers mana regen for boosted power and stronger magical resistance.",
+  "spell.mousesmagics.blessing_of_spirit.guide": "Bless a target, granting them mana.",
+  "spell.mousesmagics.bulwark_of_blossoms.guide": "Create an impenetrable shield of flower, giving you a split second of invulnerability.",
+  "spell.mousesmagics.drip.guide": "Call down a barrage of dew in front of you. Each hit grants extra mana.",
+  "spell.mousesmagics.floral_spear.guide": "Shoot forth a highly damaging spear of flowers, levitating anything hit.",
+  "spell.mousesmagics.flower_dance.guide": "Dance with the power of blossoms, applying lower defence and levitation to anything around you.",
+  "spell.mousesmagics.petal_on_the_wind.guide": "Dash forth through the wind, with multiple recasts.",
+  "spell.mousesmagics.protective_film.guide": "Grant you, and all near you, an effect which lowers gravity.",
+
+  "death.mousesmagics.dew_drop": "Dew-Drop",
+  "death.mousesmagics.bliss": "Bliss",
+  "death.mousesmagics.blessing_of_spirit": "Blessing Of Spirit",
+  "death.mousesmagics.bulwark_of_blossoms": "Bulwark Of Blossoms",
+  "death.mousesmagics.drip": "Drip",
+  "death.mousesmagics.floral_spear": "Floral Spear",
+  "death.mousesmagics.flower_dance": "Flower Dance",
+  "death.mousesmagics.petal_on_the_wind": "Petal On The Wind",
+  "death.mousesmagics.protective_film": "Protective Film"
 }

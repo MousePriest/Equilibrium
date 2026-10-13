@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:pumpkin_seeds"
+    },
+    "B": {
+      "item": "minecraft:beetroot_seeds"
+    },
+    "C": {
+      "item": "minecraft:melon_seeds"
+    },
+    "D": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mousesmagics:planting_instructions"
+  }
+}

@@ -1,11 +1,7 @@
 package com.mouse.mousesmagics;
 
 import com.mouse.mousesmagics.registries.MMBlocks;
-import com.mouse.mousesmagics.item.staffs.ceremonial_dagger.Ceremonial_DaggerRenderer;
-import com.mouse.mousesmagics.item.staffs.crystal_wrench.Crystal_WrenchRenderer;
-import com.mouse.mousesmagics.item.staffs.overgrown_sickle.OvergrownSickleRenderer;
 import com.mouse.mousesmagics.registries.*;
-import mod.azure.azurelib.common.render.item.AzItemRendererRegistry;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -46,6 +42,8 @@ public class MousesMagics {
 
         MMSchoolRegistries.register(modEventBus);
 
+        MMSoundRegistries.register(modEventBus);
+
         MMParticleRegistries.register(modEventBus);
 
         MMBlocks.register(modEventBus);
@@ -67,15 +65,9 @@ public class MousesMagics {
 
     @EventBusSubscriber(value = Dist.CLIENT)
     public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+    { @SubscribeEvent public static void onClientSetup(FMLClientSetupEvent event) {}}
 
-            //Staves
-            AzItemRendererRegistry.register(OvergrownSickleRenderer::new, MMItems.OVERGROWN_SICKLE.get());
-            AzItemRendererRegistry.register(Ceremonial_DaggerRenderer::new, MMItems.CEREMONIAL_DAGGER.get());
-            AzItemRendererRegistry.register(Crystal_WrenchRenderer::new, MMItems.CRYSTAL_WRENCH.get());
-        }
+    public static ResourceLocation id(@NotNull String path) {
+        return ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, path);
     }
 }

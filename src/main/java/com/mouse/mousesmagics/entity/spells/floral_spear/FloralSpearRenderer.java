@@ -47,7 +47,7 @@ public class FloralSpearRenderer extends EntityRenderer<FloralSpearProjectile> {
         Matrix4f poseMatrix = pose.pose();
         Matrix3f normalMatrix = pose.normal();
 
-        VertexConsumer consumer = bufferSource.getBuffer(RenderType.energySwirl(TEXTURE, 0, 0));
+        VertexConsumer consumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(TEXTURE));
         int framecount = 7;
         int anim = animOffset % framecount;
         float uvMin = anim / (float) framecount;

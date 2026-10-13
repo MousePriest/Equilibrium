@@ -196,9 +196,9 @@ public class GardenerEntity extends NeutralWizard implements IMerchantWizard {
             if (this.random.nextFloat() < .8f) {
                 this.offers.add(new AdditionalWanderingTrades.RandomScrollTrade(new SpellFilter(MMSchoolRegistries.DEW.get()), .8f, 1f).getOffer(this, this.random));
             }
-            this.offers.add(new AdditionalWanderingTrades.SimpleSell(3, new ItemStack(MMItems.PLANTING_INSTRUCTIONS.get()), 64, 64).getOffer(this, this.random));
+            this.offers.add(new AdditionalWanderingTrades.SimpleSell(1, new ItemStack(MMItems.HARVESTING_INSTRUCTIONS.get()), 16, 16).getOffer(this, this.random));
             this.offers.add(new MerchantOffer(
-                    new ItemCost(Items.EMERALD, 32),
+                    new ItemCost(Items.EMERALD, 48),
                     Optional.empty(),
                     FurledMapItem.of(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID,"forgotten_hut"), Component.translatable("item.mousesmagics.abandoned_home")),
                     0,
