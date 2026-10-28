@@ -23,6 +23,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.Collection;
 import java.util.function.Function;
 
 public class MMItems {
@@ -92,7 +93,7 @@ public class MMItems {
 
     //Ace reference
     public static final DeferredItem<Item> ICE_LOLLY = ITEMS.register("ice_lolly",
-            () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(Foods.CHORUS_FRUIT).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(MMFoods.ELDRITCH_ICE_LOLLY)));
 
     //*CURIOS*
 
@@ -120,5 +121,10 @@ public class MMItems {
 
     private static <T extends Item> DeferredHolder<Item, T> registerItem(String name, Function<Item.Properties, T> itemFactory) {
         return ITEMS.register(name, () -> itemFactory.apply(new Item.Properties()));
+    }
+
+    public static Collection<DeferredHolder<Item, ? extends Item>> getItems()
+    {
+        return ITEMS.getEntries();
     }
 }

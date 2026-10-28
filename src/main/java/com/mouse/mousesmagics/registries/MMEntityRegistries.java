@@ -62,4 +62,5 @@ public class MMEntityRegistries {
                     .sized(.6f, 1.8f)
                     .clientTrackingRange(64)
                     .build(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "gardener").toString()));
-}
+
+    }

@@ -1,6 +1,7 @@
 package com.mouse.mousesmagics.spells.dew;
 
 import com.mouse.mousesmagics.MousesMagics;
+import com.mouse.mousesmagics.entity.spells.dew_drop.DewDrop;
 import com.mouse.mousesmagics.entity.spells.drip.Drop;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
@@ -37,7 +38,7 @@ public class DewDropSpell extends AbstractSpell {
         this.baseSpellPower = 10;
         this.spellPowerPerLevel = 1;
         this.castTime = 0;
-        this.baseManaCost = 10;
+        this.baseManaCost = 20;
     }
 
     public CastType getCastType() {
@@ -53,7 +54,7 @@ public class DewDropSpell extends AbstractSpell {
     }
 
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        Drop dewdrop = new Drop(world, entity);
+        DewDrop dewdrop = new DewDrop(world, entity);
         dewdrop.setPos(entity.position().add((double)0.0F, (double)entity.getEyeHeight() - dewdrop.getBoundingBox().getYsize() * (double)0.5F, (double)0.0F));
         dewdrop.shoot(entity.getLookAngle());
         dewdrop.setDamage(this.getDamage(spellLevel, entity));

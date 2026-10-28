@@ -200,7 +200,7 @@ public class GardenerEntity extends NeutralWizard implements IMerchantWizard {
             this.offers.add(new MerchantOffer(
                     new ItemCost(Items.EMERALD, 48),
                     Optional.empty(),
-                    FurledMapItem.of(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID,"forgotten_hut"), Component.translatable("item.mousesmagics.abandoned_home")),
+                    FurledMapItem.of(ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID,"forgotten_hut"), Component.translatable("item.mousesmagics.forgotten_hut")),
                     0,
                     1,
                     5,

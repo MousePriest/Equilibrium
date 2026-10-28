@@ -32,6 +32,7 @@ public class MMCreativeModeTabs {
                         output.accept(MMItems.HARVESTING_INSTRUCTIONS);
                         output.accept(MMItems.PLANTING_INSTRUCTIONS);
                         output.accept(MMItems.WATERING_INSTRUCTIONS);
+                        output.accept(MMItems.FLORAL_SCENT);
                         output.accept(MMItems.ICE_LOLLY);
                     }).build());
 

@@ -34,13 +34,14 @@ public class FloralSpearProjectile extends AbstractMagicProjectile {
     @Override
     public void trailParticles() {
         Vec3 vec3 = this.position().subtract(getDeltaMovement());
-        level.addParticle(MMParticleHelper.DEW_DROP, vec3.x, vec3.y, vec3.z, 0, 0, 0);
+        level.addParticle(MMParticleHelper.FADING_FLOWER, vec3.x, vec3.y, vec3.z, 0, 0, 0);
     }
 
     @Override
     public void impactParticles(double x, double y, double z) {
-        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 45, .1, .1, .1, 1.6, true);
-        MagicManager.spawnParticles(level(), MMParticleHelper.DEW_DROP, x, y, z, 45, .1, .1, .1, .7, false);
+        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 45, .1, .1, .1, 0.5, true);
+        MagicManager.spawnParticles(level(), MMParticleHelper.FADING_FLOWER, x, y, z, 25, .1, .1, .1, 1.6, true);
+        MagicManager.spawnParticles(level(), MMParticleHelper.DEW_DROP, x, y, z, 15, .1, .1, .1, 0.3, true);
         MagicManager.spawnParticles(level, new BlastwaveParticleOptions(1f, 0.95f, 0.95f, 5f), getX(), getY() + 0.06, getZ(), 1, 0, 0, 0, 0, true);
     }
 

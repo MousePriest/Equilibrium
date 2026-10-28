@@ -51,12 +51,12 @@ public class PetalOnTheWindSpell extends AbstractSpell {
         this.spellPowerPerLevel = 2;
         this.baseManaCost = 30;
         this.manaCostPerLevel = 10;
-        this.castTime = 10;
+        this.castTime = 0;
     }
 
     @Override
     public CastType getCastType() {
-        return CastType.LONG;
+        return CastType.INSTANT;
     }
 
     @Override

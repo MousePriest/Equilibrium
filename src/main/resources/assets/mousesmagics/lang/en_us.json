@@ -13,8 +13,10 @@
   "item.mousesmagics.watering_instructions": "Watering Instructions",
   "item.mousesmagics.planting_instructions": "Planting Instructions",
   "item.mousesmagics.harvesting_instructions": "Harvesting Instructions",
+  "item.mousesmagics.floral_scent": "Floral Scent",
   "item.mousesmagics.dew_rune": "Dew Rune",
   "item.mousesmagics.dew_upgrade_orb": "Dew Upgrade Orb",
+  "item.mousesmagics.forgotten_hut": "Abandoned Greenhouse",
 
   "block.mousesmagics.blossom_chalk": "Blossom Chalk",
 
@@ -24,7 +26,7 @@
 
   "school.mousesmagics.dew": "Dew",
 
-  "spell.mousesmagics.dew_drop": "Dew-Drop",
+  "spell.mousesmagics.dew_drop": "Dew Drop",
   "spell.mousesmagics.bliss": "Bliss",
   "spell.mousesmagics.blessing_of_spirit": "Blessing Of Spirit",
   "spell.mousesmagics.bulwark_of_blossoms": "Bulwark Of Blossoms",
@@ -44,7 +46,12 @@
   "spell.mousesmagics.petal_on_the_wind.guide": "Dash forth through the wind, with multiple recasts.",
   "spell.mousesmagics.protective_film.guide": "Grant you, and all near you, an effect which lowers gravity.",
 
-  "death.mousesmagics.dew_drop": "Dew-Drop",
+  "effect.mousesmagics.calm": "Calm",
+  "effect.mousesmagics.blossom_bulwark": "Blossom Bulwark",
+  "effect.mousesmagics.flower_food": "Flower Food",
+  "effect.mousesmagics.dew_film": "Dew Film",
+
+  "death.attack.irons_spellbooks.icicle": "%1$s was pierced by %2$s's icicle",
   "death.mousesmagics.bliss": "Bliss",
   "death.mousesmagics.blessing_of_spirit": "Blessing Of Spirit",
   "death.mousesmagics.bulwark_of_blossoms": "Bulwark Of Blossoms",
@@ -52,5 +59,7 @@
   "death.mousesmagics.floral_spear": "Floral Spear",
   "death.mousesmagics.flower_dance": "Flower Dance",
   "death.mousesmagics.petal_on_the_wind": "Petal On The Wind",
-  "death.mousesmagics.protective_film": "Protective Film"
+  "death.mousesmagics.protective_film": "Protective Film",
+
+  "entity.mousesmagics.gardener": "Gardener"
 }

@@ -2,6 +2,8 @@ package com.mouse.mousesmagics;
 
 import com.mouse.mousesmagics.registries.MMBlocks;
 import com.mouse.mousesmagics.registries.*;
+import io.redspace.ironsspellbooks.item.SpellBook;
+import io.redspace.ironsspellbooks.render.SpellBookCurioRenderer;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -18,6 +20,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 @Mod(MousesMagics.MOD_ID)
 public class MousesMagics {
@@ -65,7 +68,13 @@ public class MousesMagics {
 
     @EventBusSubscriber(value = Dist.CLIENT)
     public static class ClientModEvents
-    { @SubscribeEvent public static void onClientSetup(FMLClientSetupEvent event) {}}
+    {
+        @SubscribeEvent public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                MMItems.getItems().stream().filter(item -> item.get() instanceof SpellBook).forEach((item) -> CuriosRendererRegistry.register(item.get(), SpellBookCurioRenderer::new));
+            });
+        }
+    }
 
     public static ResourceLocation id(@NotNull String path) {
         return ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, path);

@@ -1,6 +1,26 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "mousesmagics:item/gardening_guide"
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "textures": {
+      "book": "mousesmagics:item/spellbook/gardening_guide",
+      "particle": "mousesmagics:item/spellbook/gardening_guide"
+    },
+    "parent": "irons_spellbooks:item/template_spell_book_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "mousesmagics:item/gardening_guide"
+      }
+    },
+    "head": {
+      "textures": {
+        "book": "mousesmagics:item/spellbook/gardening_guide",
+        "particle": "mousesmagics:item/spellbook/gardening_guide"
+      },
+      "parent": "irons_spellbooks:item/template_spell_book_model_open"
+    }
   }
 }

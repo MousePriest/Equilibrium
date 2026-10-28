@@ -77,7 +77,8 @@ public class FlowerDanceSpell extends AbstractSpell {
                     if (target instanceof LivingEntity livingEntity && livingEntity.distanceToSqr(entity) < radius * radius) {
                         livingEntity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, getDuration(spellLevel, entity), 0, false, false, true));
                         livingEntity.addEffect(new MobEffectInstance(MobEffectRegistry.REND, getDuration(spellLevel, entity), 0, false, false, true));
-                        MagicManager.spawnParticles(level, MMParticleHelper.SPARKLE, livingEntity.getX(), livingEntity.getY() + livingEntity.getBbHeight() * .5f, livingEntity.getZ(), 50, livingEntity.getBbWidth() * .5f, livingEntity.getBbHeight() * .5f, livingEntity.getBbWidth() * .5f, .03, false);
+                        MagicManager.spawnParticles(level, MMParticleHelper.FADING_FLOWER, livingEntity.getX(), livingEntity.getY() + livingEntity.getBbHeight() * .5f, livingEntity.getZ(), 10, livingEntity.getBbWidth() * .5f, livingEntity.getBbHeight() * .5f, livingEntity.getBbWidth() * .5f, .03, false);
+                        MagicManager.spawnParticles(level, MMParticleHelper.DEW_DROP, livingEntity.getX(), livingEntity.getY() + livingEntity.getBbHeight() * .5f, livingEntity.getZ(), 10, livingEntity.getBbWidth() * .5f, livingEntity.getBbHeight() * .5f, livingEntity.getBbWidth() * .5f, .03, false);
                     }
                 });
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);

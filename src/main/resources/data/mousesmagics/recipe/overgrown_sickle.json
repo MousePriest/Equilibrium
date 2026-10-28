@@ -6,10 +6,10 @@
       "item": "mousesmagics:floral_scent"
     },
     "B": {
-      "tag": "irons_spellbooks:arcane_ingot"
+      "item": "irons_spellbooks:arcane_ingot"
     },
     "C": {
-      "tag": "mousesmagics:serene_seed"
+      "item": "mousesmagics:serene_seed"
     },
     "D": {
       "item": "minecraft:stick"
