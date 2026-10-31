@@ -51,15 +51,15 @@
   "effect.mousesmagics.flower_food": "Flower Food",
   "effect.mousesmagics.dew_film": "Dew Film",
 
-  "death.attack.irons_spellbooks.icicle": "%1$s was pierced by %2$s's icicle",
-  "death.mousesmagics.bliss": "Bliss",
-  "death.mousesmagics.blessing_of_spirit": "Blessing Of Spirit",
-  "death.mousesmagics.bulwark_of_blossoms": "Bulwark Of Blossoms",
-  "death.mousesmagics.drip": "Drip",
-  "death.mousesmagics.floral_spear": "Floral Spear",
-  "death.mousesmagics.flower_dance": "Flower Dance",
-  "death.mousesmagics.petal_on_the_wind": "Petal On The Wind",
-  "death.mousesmagics.protective_film": "Protective Film",
+  "death.attack.mousesmagics.dew_drop": "%1$s was pummeled by dew from %2$s's magic",
+  "death.attack.mousesmagics.bliss": "%1$s will was tempted into serenity by %2$s",
+  "death.attack.mousesmagics.blessing_of_spirit": "%2$s broke the rules of reality to kill %1$s, genuinely how did this happen",
+  "death.attack.mousesmagics.bulwark_of_blossoms": "%1$s fell to %2$s's thorned defences",
+  "death.attack.mousesmagics.drip": "%1$s was blasted into dew by %2$s",
+  "death.attack.mousesmagics.floral_spear": "%1$s was shown the force of %2$s's floral power",
+  "death.attack.mousesmagics.flower_dance": "%2$s's floral dance led %1$s into the beyond",
+  "death.attack.mousesmagics.petal_on_the_wind": "%1$s was turned into mist by %2$s",
+  "death.attack.mousesmagics.protective_film": "%2$s broke the rules of reality to kill %1$s, genuinely how did this happen",
 
   "entity.mousesmagics.gardener": "Gardener"
 }

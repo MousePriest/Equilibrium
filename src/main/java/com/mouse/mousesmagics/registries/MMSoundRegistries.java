@@ -16,6 +16,14 @@ public class MMSoundRegistries {
     // Dew Cast
     public static DeferredHolder<SoundEvent, SoundEvent> DEW_CAST = registerSoundEvent("dew_cast");
 
+    //Floral Spear
+    public static DeferredHolder<SoundEvent, SoundEvent> FLORAL_CHARGE = registerSoundEvent("floral_charge");
+
+    public static DeferredHolder<SoundEvent, SoundEvent> FLORAL_IMPACT = registerSoundEvent("floral_impact");
+
+    //Bliss
+    public static DeferredHolder<SoundEvent, SoundEvent> BLISS_CAST = registerSoundEvent("bliss_cast");
+
     private static DeferredHolder<SoundEvent, SoundEvent> registerSoundEvent(String name)
     {
         return SOUND_EVENT.register(name, () -> SoundEvent.createVariableRangeEvent

@@ -4,6 +4,7 @@ import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.effect.CalmEffect;
 import com.mouse.mousesmagics.registries.MMEffectRegisteries;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
+import com.mouse.mousesmagics.registries.MMSoundRegistries;
 import com.mouse.mousesmagics.utils.MMParticleHelper;
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
@@ -19,6 +20,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,6 +28,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 
 import java.util.List;
+import java.util.Optional;
 
 public class ProtectiveFilmSpell extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "protective_film");

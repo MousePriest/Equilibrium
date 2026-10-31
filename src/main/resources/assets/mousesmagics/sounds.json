@@ -3,5 +3,20 @@
     "sounds": [
       "mousesmagics:dew_cast"
     ]
+  },
+  "floral_charge": {
+    "sounds": [
+      "mousesmagics:floral_charge"
+    ]
+  },
+  "floral_impact": {
+    "sounds": [
+      "mousesmagics:floral_impact"
+    ]
+  },
+  "bliss_cast": {
+    "sounds": [
+      "mousesmagics:bliss_cast"
+    ]
   }
 }

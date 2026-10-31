@@ -82,7 +82,7 @@ public class FloralSpearProjectile extends AbstractMagicProjectile {
         //irons_spellbooks.LOGGER.debug("Boom");
 
         if (!level().isClientSide) {
-            this.playSound(MMSoundRegistries.DEW_CAST.value(), 6, .65f);}
+            this.playSound(MMSoundRegistries.FLORAL_IMPACT.value(), 6, .65f);}
         super.onHit(pResult);
         this.discardHelper(pResult);
     }

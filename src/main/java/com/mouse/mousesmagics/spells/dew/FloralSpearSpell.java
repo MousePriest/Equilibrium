@@ -3,6 +3,7 @@ package com.mouse.mousesmagics.spells.dew;
 import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.entity.spells.floral_spear.FloralSpearProjectile;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
+import com.mouse.mousesmagics.registries.MMSoundRegistries;
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
@@ -60,10 +61,10 @@ public class FloralSpearSpell extends AbstractSpell {
     }
 
     @Override
-    public Optional<SoundEvent> getCastStartSound() {return Optional.of(SoundRegistry.LIGHTNING_LANCE_CAST.get());}
+    public Optional<SoundEvent> getCastStartSound() {return Optional.of(MMSoundRegistries.FLORAL_CHARGE.get());}
 
     @Override
-    public Optional<SoundEvent> getCastFinishSound() {return Optional.of(SoundRegistry.LIGHTNING_WOOSH_01.get());}
+    public Optional<SoundEvent> getCastFinishSound() {return Optional.of(MMSoundRegistries.DEW_CAST.get());}
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {

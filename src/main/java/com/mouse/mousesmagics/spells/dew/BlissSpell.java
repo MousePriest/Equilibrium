@@ -4,6 +4,7 @@ import com.mouse.mousesmagics.MousesMagics;
 import com.mouse.mousesmagics.effect.CalmEffect;
 import com.mouse.mousesmagics.registries.MMEffectRegisteries;
 import com.mouse.mousesmagics.registries.MMSchoolRegistries;
+import com.mouse.mousesmagics.registries.MMSoundRegistries;
 import com.mouse.mousesmagics.spells.MMSpellAnimations;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
@@ -15,11 +16,13 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 
 import java.util.List;
+import java.util.Optional;
 
 public class BlissSpell extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(MousesMagics.MOD_ID, "bliss");
@@ -63,6 +66,9 @@ public class BlissSpell extends AbstractSpell {
     public ResourceLocation getSpellResource() {
         return spellId;
     }
+
+    @Override
+    public Optional<SoundEvent> getCastStartSound() {return Optional.of(MMSoundRegistries.BLISS_CAST.get());}
 
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
