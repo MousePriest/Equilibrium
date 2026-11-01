@@ -1,6 +1,8 @@
 {
   "creativetab.mousesmagics.mouses_magics": "Equilibrium",
 
+  "ui.mousesmagics.mana_restore": "%d Mana Restore",
+
   "item.mousesmagics.fragile_drops": "Fragile Drops",
   "item.mousesmagics.ice_lolly": "Eldritch Ice Lolly",
   "item.mousesmagics.overgrownsickle": "Overgrown Sickle",

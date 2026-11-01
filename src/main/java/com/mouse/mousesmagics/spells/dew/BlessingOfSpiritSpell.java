@@ -37,7 +37,7 @@ public class BlessingOfSpiritSpell extends AbstractSpell {
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {
         return List.of(
-                Component.translatable("ui.irons_spellbooks.healing", Utils.stringTruncation(getSpellPower(spellLevel, caster), 1))
+                Component.translatable("ui.mousesmagics.mana_restore", Utils.stringTruncation(getSpellPower(spellLevel, caster) * 10, 1))
         );
     }
 
@@ -83,7 +83,7 @@ public class BlessingOfSpiritSpell extends AbstractSpell {
             var targetEntity = healTargetingData.getTarget((ServerLevel) world);
             if (targetEntity != null) {
                 var pmg = MagicData.getPlayerMagicData(entity);
-                pmg.addMana(getSpellPower(spellLevel, entity) * 5);
+                pmg.addMana(getSpellPower(spellLevel, entity) * 10);
                 if (entity instanceof ServerPlayer serverPlayer) {
                     PacketDistributor.sendToPlayer(serverPlayer, new SyncManaPacket(pmg));
                 }
